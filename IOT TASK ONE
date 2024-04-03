@@ -1,0 +1,55 @@
+# Build a system that adjusts the brightness of room lights based on ambient light level and user preferences
+
+#include <Adafruit_NeoPixel.h>
+
+#define LED_PIN   9       // First pin connected to the NeoPixels
+#define NUM_LEDS  32      // Number of NeoPixels
+
+Adafruit_NeoPixel strip(NUM_LEDS, LED_PIN, NEO_GRB + NEO_KHZ800);
+
+int lightSensorPin = A1;    // Analog pin for the light sensor
+int potentiometerPin = A0;  // Analog pin for the potentiometer
+
+void setup() {
+  strip.begin();
+  strip.show(); // Initialize all pixels to 'off'
+  Serial.begin(9600);
+}
+
+void loop() {
+  // Read analog value from light sensor
+  int lightValue = analogRead(lightSensorPin);
+  
+  // Map the light sensor value (0-1023) to NeoPixel brightness (0-255)
+  int brightnessFromLightSensor = map(lightValue, 0, 1023, 255, 0);
+  
+  // Read analog value from potentiometer
+  int potValue = analogRead(potentiometerPin);
+  
+  // Map the potentiometer value (0-1023) to NeoPixel brightness (0-255)
+  int brightnessFromPotentiometer = map(potValue, 0, 1023, 0, 255);
+  
+  // Set NeoPixel brightness based on the light sensor
+  int brightness = min(brightnessFromLightSensor, brightnessFromPotentiometer);
+  
+  // Set NeoPixel brightness
+  strip.setBrightness(brightness);
+  
+  // Define colors to cycle through
+  uint32_t colors[] = {strip.Color(255, 0, 0),   // Red
+                       strip.Color(0, 255, 0),   // Green
+                       strip.Color(0, 0, 255)}; // Blue
+  int numColors = sizeof(colors) / sizeof(colors[0]);
+  
+  // Cycle through colors
+  static int colorIndex = 0;
+  for(int i = 0; i < NUM_LEDS; i++) {
+    strip.setPixelColor(i, colors[colorIndex]);
+  }
+  strip.show();
+  
+  // Increment colorIndex for next iteration
+  colorIndex = (colorIndex + 1) % numColors;
+  
+  delay(1000); // Add a small delay to prevent flickering
+}
