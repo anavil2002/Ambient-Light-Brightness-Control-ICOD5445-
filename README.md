@@ -1,5 +1,5 @@
 **Title CodeTech IT Solutions Internship - Automatic Room Light Control (IoT Internship)**
-
+**LINK - https://www.tinkercad.com/things/lc1twzWD1Cp-brightness-control**
 **Introduction:**
  -  In modern homes and offices, efficient use of lighting is crucial for energy conservation and user comfort. Automatic room light control systems leverage IoT technology to adjust lighting based on ambient light levels and user preferences. This documentation outlines the development process and implementation of an automatic room light control system as part of the IoT internship at CodeTech IT Solutions.
 
