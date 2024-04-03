@@ -72,18 +72,18 @@ void loop() {
 - The code includes the necessary library `Adafruit_NeoPixel.h` for controlling NeoPixel LEDs.
 - Pins for NeoPixel LED strip, light sensor, and potentiometer are defined.
 - In the `setup()` function:
-  -> NeoPixel strip is initialized.
-  -> Serial communication is initialized for debugging purposes.
+  - NeoPixel strip is initialized.
+  - Serial communication is initialized for debugging purposes.
 - In the `loop()` function:
-  -> Analog readings from the light sensor and potentiometer are obtained.
-  -> These readings are mapped to the brightness range of NeoPixel LEDs.
-  -> The minimum brightness value between the light sensor and potentiometer is selected.
-  -> NeoPixel brightness is set accordingly.
-  -> RGB colors (Red, Green, Blue) are defined for cycling through the NeoPixel strip.
-  -> The color of each pixel in the NeoPixel strip is set to the current color.
-  -> NeoPixel strip is updated to display the new colors.
-  -> Color index is incremented for cycling through colors.
-  -> A delay of 1 second is added to control the speed of color changes.
+  - Analog readings from the light sensor and potentiometer are obtained.
+  - These readings are mapped to the brightness range of NeoPixel LEDs.
+  - The minimum brightness value between the light sensor and potentiometer is selected.
+  - NeoPixel brightness is set accordingly.
+  - RGB colors (Red, Green, Blue) are defined for cycling through the NeoPixel strip.
+  - The color of each pixel in the NeoPixel strip is set to the current color.
+  - NeoPixel strip is updated to display the new colors.
+  - Color index is incremented for cycling through colors.
+  - A delay of 1 second is added to control the speed of color changes.
   
 **Conclusion:**
    The automatic room light control system offers several benefits, including energy savings, improved user comfort, and convenience. Through the integration of IoT technology, it provides a smart solution for efficient lighting management in residential and commercial spaces. This project provides valuable hands-on experience in IoT development and contributes to sustainable living practices.
