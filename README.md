@@ -1,17 +1,17 @@
 **Title CodeTech IT Solutions Internship - Automatic Room Light Control (IoT Internship)**
 
 **Introduction:**
-   In modern homes and offices, efficient use of lighting is crucial for energy conservation and user comfort. Automatic room light control systems leverage IoT technology to adjust lighting based on ambient light levels and user preferences. This documentation outlines the development process and implementation of an automatic room light control system as part of the IoT internship at CodeTech IT Solutions.
+ -  In modern homes and offices, efficient use of lighting is crucial for energy conservation and user comfort. Automatic room light control systems leverage IoT technology to adjust lighting based on ambient light levels and user preferences. This documentation outlines the development process and implementation of an automatic room light control system as part of the IoT internship at CodeTech IT Solutions.
 
 **Intern Information**
-Name: Anavil Tripathi
-Intern ID: ICOD5445
+- Name: Anavil Tripathi
+- Intern ID: ICOD5445
 
 **Task Description**
-  This documentation provides an overview of the automatic room light control system developed during the IoT internship at CodeTech IT Solutions. Through this project, I've gained practical experience in IoT development and contribute to the advancement of smart home technology.
+ - This documentation provides an overview of the automatic room light control system developed during the IoT internship at CodeTech IT Solutions. Through this project, I've gained practical experience in IoT development and contribute to the advancement of smart home technology.
 
 **Implementation**
-  Implement an Arduino-based system utilizing light sensors to detect ambient light levels, processing the data to determine the required brightness level, and controlling the room lights using light sensor or through potentiometer (handled by the user).
+ - Implement an Arduino-based system utilizing light sensors to detect ambient light levels, processing the data to determine the required brightness level, and controlling the room lights using light sensor or through potentiometer (handled by the user).
   
 ```--Code
 #include <Adafruit_NeoPixel.h>
@@ -86,6 +86,6 @@ void loop() {
   - A delay of 1 second is added to control the speed of color changes.
   
 **Conclusion:**
-   The automatic room light control system offers several benefits, including energy savings, improved user comfort, and convenience. Through the integration of IoT technology, it provides a smart solution for efficient lighting management in residential and commercial spaces. This project provides valuable hands-on experience in IoT development and contributes to sustainable living practices.
+- The automatic room light control system offers several benefits, including energy savings, improved user comfort, and convenience. Through the integration of IoT technology, it provides a smart solution for efficient lighting management in residential and commercial spaces. This project provides valuable hands-on experience in IoT development and contributes to sustainable living practices.
 
 This concludes the documentation for the task "Automatic room light control system" assigned during the CodeTech IT Solutions Internship Program.
