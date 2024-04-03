@@ -13,7 +13,7 @@ Intern ID: ICOD5445
 **Implementation**
   Implement an Arduino-based system utilizing light sensors to detect ambient light levels, processing the data to determine the required brightness level, and controlling the room lights using light sensor or through potentiometer (handled by the user).
   
-**--Code**
+```--Code
 #include <Adafruit_NeoPixel.h>
 
 #define LED_PIN   9        // Define the pin connected to the NeoPixels
@@ -66,7 +66,7 @@ void loop() {
   
   delay(1000); // Delay for 1 second to control color change speed
 }
-
+```
 
 **Code Explanation:**
 -The code includes the necessary library Adafruit_NeoPixel.h for controlling NeoPixel LEDs.
